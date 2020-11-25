@@ -9,7 +9,7 @@ const Card = () => {
     <div className="w-1/3 p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-xl flex flex-row items-center justify-start transition">
       <AkioSVG className="h-8 w-auto text-red-600 dark:text-red-400 fill-current justify-self-start transition" />
       <div className="ml-4">
-        <h1 className="text-lg font-medium text-blue-700 dark:text-blue-50 leading-tight transition">
+        <h1 className="text-lg font-medium text-blue-700 dark:text-blue-300 leading-tight transition">
           {printToday()} will be a good day :)
         </h1>
         <CountDown />
