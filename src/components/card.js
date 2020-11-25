@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { printToday } from "../util/util";
 import { ReactComponent as AkioSVG } from "../images/svg/akio.svg";
 import cooper from "../images/cooper.jpg";
@@ -6,7 +6,7 @@ import CountDown from "../components/CountDown";
 
 const Card = () => {
   return (
-    <div className="w-1/3 p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-xl flex flex-row items-center justify-start transition">
+    <div className="flex-shrink max-h-32 w-1/3 p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-xl flex flex-row items-center justify-start transition">
       <AkioSVG className="h-8 w-auto text-red-600 dark:text-red-400 fill-current justify-self-start transition" />
       <div className="ml-4">
         <h1 className="text-lg font-medium text-blue-700 dark:text-blue-300 leading-tight transition">
