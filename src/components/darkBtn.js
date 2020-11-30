@@ -1,16 +1,23 @@
-import React from "react";
-import { useThemeUpdate } from "../util/ThemeContext";
+import React, { useRef } from "react";
+import { useTheme, useThemeUpdate } from "../util/ThemeContext";
+import { ReactComponent as Sun } from "../images/svg/sun.svg";
+import { ReactComponent as Moon } from "../images/svg/moon.svg";
 
 const DarkSwitch = () => {
+  const theme = useRef();
+  theme.current = useTheme();
   return (
-    <div className=" absolute top-0 right-0 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg rounded-t-none rounded-r-none z-50 transition">
-      <label
-        className="flex items-center text-xs text-gray-400 dark:text-gray-100 transition"
-        htmlFor="darkSwitch"
-      >
-        <span>Dark Mode</span>
+    <div
+      className={`absolute top-4 right-4 p-2 bg-gray-700 dark:bg-gray-50 rounded-full z-50 transition`}
+    >
+      <label className="relative transition" htmlFor="darkSwitch">
+        {theme.current ? (
+          <Sun className="h-5 w-5 text-yellow-400" />
+        ) : (
+          <Moon className="h-5 w-5 text-gray-200" />
+        )}
         <input
-          className="ml-2.5 rounded-full p-2.5 bg-yellow-100 focus:ring-yellow-300 border-none text-gray-800"
+          className="w-0 h-0 absolute top-0 left-0 hidden"
           id="darkSwitch"
           type="checkbox"
           onClick={useThemeUpdate()}
