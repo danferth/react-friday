@@ -11,16 +11,11 @@ module.exports = {
   darkMode: "class", // false or 'media' or 'class'
   theme: {
     extend: {},
-    colors: {
-      gray: colors.trueGray,
-      red: colors.rose,
-      yellow: colors.amber,
-      green: colors.emerald,
-      blue: colors.lightBlue,
-    },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundOpacity: ["dark"],
+    },
   },
   plugins: [
     require("@tailwindcss/forms"),
