@@ -8,9 +8,9 @@ const App = () => {
   const dark = useTheme();
   return (
     <React.Fragment>
-      <div className={dark ? `dark` : ``}>
+      <div className={`${dark ? `dark` : ``} flex flex-col min-h-screen`}>
         <DarkSwitch />
-        <div className="min-w-full min-h-screen z-10 bg-white dark:bg-gray-800 transition">
+        <div className="flex-grow pt-20 flex flex-col items-center min-w-full z-10 bg-white dark:bg-gray-800 transition">
           <Cooper />
           <Card />
         </div>

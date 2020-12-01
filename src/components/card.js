@@ -12,7 +12,7 @@ const Card = () => {
         <Minutes>{theCount.current.minutes}</Minutes>
         <Seconds>{theCount.current.seconds}</Seconds>
       </div>
-      <p className="text-center mt-6 text-base italic font-medium font-serif tracking-wide text-gray-400 dark:text-gray-300 transition">
+      <p className="cursive text-center mt-6 text-base font-medium font-serif text-gray-400 dark:text-gray-400 transition">
         Until Friday 5:00 pm PST ...
       </p>
     </>
