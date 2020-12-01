@@ -14,7 +14,7 @@ const Cooper = () => {
       </div>
       <div className="ml-4">
         <p className="text-sm font-serif italic tracking-tight text-gray-300 dark:text-gray-600 transition">
-          Remember, Cooper says ...
+          Cooper always says ...
         </p>
         <p className="mt-1 text-base font-serif font-bold text-gray-700 dark:text-gray-400 leading-tight transition">
           {printToday()} will be a good day!
