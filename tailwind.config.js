@@ -8,7 +8,7 @@ module.exports = {
     "src/**/*.tsx",
     "public/**/*.html",
   ],
-  darkMode: "class", // false or 'media' or 'class'
+  darkMode: "media", // false or 'media' or 'class'
   theme: {
     extend: {},
   },
