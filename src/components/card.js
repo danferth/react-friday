@@ -5,7 +5,7 @@ const Card = () => {
   const theCount = useRef();
   theCount.current = useCountdown();
   return (
-    <div className="w-full px-8">
+    <div className="w-full px-8 md:px-12 lg:p-0 lg:pl-14">
       <div className="grid gap-2.5 grid-cols-2 sm:grid-cols-4 sm:grid-rows-2">
         <Days>{theCount.current.days}</Days>
         <Hours>{theCount.current.hours}</Hours>
