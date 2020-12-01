@@ -4,7 +4,7 @@ import { printToday } from "../util/util";
 
 const Cooper = () => {
   return (
-    <div className="flex items-center py-4 px-5 mb-5">
+    <div className="flex items-center py-4 px-5 mb-5 sm:mb-3">
       <div className="relative w-14 h-0 pt-14 rounded-full overflow-hidden ring-2 ring-gray-200 dark:ring-gray-600 transition">
         <img
           src={cooper}

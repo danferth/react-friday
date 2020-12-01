@@ -1,6 +1,6 @@
 import React from "react";
 import Cooper from "./components/Cooper";
-import Card from "./components/card";
+import Card from "./components/Card";
 import Footer from "./components/Footer";
 import DarkSwitch from "./components/DarkBtn";
 import { useTheme } from "./util/ThemeContext";
@@ -10,7 +10,7 @@ const App = () => {
     <React.Fragment>
       <div className={`${dark ? `dark` : ``} flex flex-col min-h-screen`}>
         <DarkSwitch />
-        <div className="flex-grow pt-20 flex flex-col items-center min-w-full z-10 bg-white dark:bg-gray-800 transition">
+        <div className="flex-grow flex flex-col items-center justify-evenly min-w-full z-10 bg-white dark:bg-gray-800 transition">
           <Cooper />
           <Card />
         </div>
