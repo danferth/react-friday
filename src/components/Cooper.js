@@ -5,7 +5,7 @@ import { printToday } from "../util/util";
 const Cooper = () => {
   return (
     <div className="md:ml-0 lg:self-center xl:mx-auto xl:-mt-20 flex items-center md:flex-col py-4 px-5 lg:p-0 mb-5 sm:mb-3 md:mb-20 lg:mb-0">
-      <div className="relative md:shadow-mdh-0 w-14 pt-14 md:w-24 md:pt-24 xl:w-36 xl:pt-36 md:mb-2 rounded-full overflow-hidden ring-2 ring-gray-200 dark:ring-gray-600 transition">
+      <div className="relative md:shadow-mdh-0 w-14 pt-14 md:w-24 md:pt-24 xl:w-36 xl:pt-36 md:mb-2 rounded-full overflow-hidden ring-2 xl:ring-4 ring-gray-200 dark:ring-gray-600 transition">
         <img
           src={cooper}
           alt="cooper"
