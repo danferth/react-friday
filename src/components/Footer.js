@@ -3,7 +3,7 @@ import { ReactComponent as Akio } from "../images/svg/akio.svg";
 
 const Footer = () => {
   return (
-    <div className="mt-auto flex items-center justify-between lg:justify-center xl:justify-end py-2 xl:py-3.5 px-5 md:px-8 w-full">
+    <div className="mt-auto flex items-center justify-between lg:justify-center xl:justify-end py-2 xl:py-3.5 px-5 md:px-8 w-full bg-white dark:bg-gray-800 transition">
       <span className="serif text-xs md:text-sm lg:font-extralight text-gray-300 dark:text-gray-500 tracking-wider transition">
         made by{" "}
         <a className="underline" href="https://danferth.dev">
