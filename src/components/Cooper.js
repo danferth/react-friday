@@ -1,7 +1,7 @@
 import React from "react";
 import cooper from "../images/cooper.jpg";
 import { printToday } from "../util/util";
-
+// import useAffirmation from "./useAffirmation";
 const Cooper = () => {
   return (
     <div className="md:ml-0 lg:self-center xl:mx-auto xl:-mt-20 flex items-center md:flex-col py-4 px-5 lg:p-0 mb-5 sm:mb-3 md:mb-20 lg:mb-0">
@@ -14,10 +14,10 @@ const Cooper = () => {
       </div>
       <div className="ml-4 md:ml-0 text-left md:text-center">
         <p className="cursive text-sm md:text-base lg:mb-4 font-serif italic tracking-tight md:tracking-normal text-gray-400 dark:text-gray-500 transition">
-          Cooper always says ...
+          It's {printToday()}, Cooper says ...
         </p>
         <p className="serif mt-1 text-base md:text-lg font-medium text-gray-700 dark:text-gray-400 leading-tight tracking-tight md:tracking-normal transition">
-          {printToday()} will be a good day!
+          {/* {useAffirmation()} */}
         </p>
       </div>
     </div>
