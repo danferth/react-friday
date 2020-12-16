@@ -1,11 +1,25 @@
 import React, { useRef } from "react";
+import { motion } from "framer-motion";
 import { useCountdown } from "./useCountdown";
 
 const Card = () => {
   const theCount = useRef();
   theCount.current = useCountdown();
+  const variants = {
+    initial: { opacity: 0 },
+    animate: {
+      opacity: 1,
+      transition: { type: "tween", delay: 1.5, duration: 0.5, ease: "easeIn" },
+    },
+  };
   return (
-    <div className="w-full px-8 md:px-12 lg:p-0 xl:w-1/3 xl:mx-auto">
+    <motion.div
+      layout
+      variants={variants}
+      initial="initial"
+      animate="animate"
+      className="w-full px-8 md:px-12 lg:p-0 lg:w-8/12 lg:ml-auto xl:w-6/12 xl:mx-auto"
+    >
       <div className="grid gap-2.5 md:gap-3.5 xl:gap-5 grid-cols-2 sm:grid-cols-4 sm:grid-rows-2 xl:grid-cols-2 xl:grid-rows-1">
         <Days count={theCount.current.days}>{theCount.current.days}</Days>
         <Hours count={theCount.current.hours}>{theCount.current.hours}</Hours>
@@ -19,7 +33,7 @@ const Card = () => {
       <p className="cursive text-center mt-6 sm:mt-3 md:mt-10 md:text-lg text-base font-medium font-serif text-gray-400 dark:text-gray-400 transition">
         Until Friday 5:00 pm
       </p>
-    </div>
+    </motion.div>
   );
 };
 
@@ -79,7 +93,7 @@ const Wrap = (props) => {
   return (
     <div className={`${props.grid} rounded-md shadow-md xl:shadow-lg`}>
       <div
-        className={`overflow-hidden rounded-md shadow-sm font-mono text-gray-300 bg-gray-100 dark:text-gray-800  dark:bg-gray-700 transition`}
+        className={`h-full overflow-hidden rounded-md shadow-sm font-mono text-gray-300 bg-gray-100 dark:text-gray-800  dark:bg-gray-700 transition`}
       >
         {props.children}
       </div>
