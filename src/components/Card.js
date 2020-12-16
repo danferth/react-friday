@@ -9,12 +9,12 @@ const Card = () => {
     initial: { opacity: 0 },
     animate: {
       opacity: 1,
-      transition: { type: "tween", delay: 1.5, duration: 0.5, ease: "easeIn" },
+      transition: { type: "tween", delay: 1, duration: 0.5, ease: "easeIn" },
     },
   };
   return (
     <motion.div
-      layout
+      layout="true"
       variants={variants}
       initial="initial"
       animate="animate"
